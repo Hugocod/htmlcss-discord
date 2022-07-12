@@ -11,7 +11,6 @@ body {
 .info-section,
 .CTA-section {
   padding: 120px 0px;
-  background-color: aliceblue;
 }
 
 /* / general style */
@@ -26,14 +25,17 @@ body {
 
 /* hero-section */
 
+.hero-section {
+  background-image: url(img_discord/jumbo.png);
+  background-size: cover;
+}
+
 .hero-section .wrapper {
   width: 1000px;
   margin: 0 auto;
 }
 
 header {
-  background-color: brown;
-
   /* flexbox rules */
   display: flex;
   justify-content: space-between;
@@ -44,7 +46,11 @@ header {
 .logo {
   height: 50px;
   width: 100px;
-  background-color: rgb(255, 255, 127);
+
+  background-image: url(img_discord/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-section .info-block {
@@ -57,27 +63,104 @@ header {
   padding: 120px 0px;
 }
 
-.hero-section .info-block h1 p {
+.hero-section .info-block {
   text-align: center;
+  color: white;
+
+  width: 60%;
+  margin: 0 auto;
+}
+
+.btn-1 {
+  border-radius: 28px;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+
+  font-size: 0.8rem;
+
+  background-color: #ffffff;
+}
+
+.btn-2 {
+  border-radius: 28px;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+
+  font-size: 0.8rem;
+
+  background-color: #23272a;
+  color: white;
+}
+
+.btn-3 {
+  border-radius: 28px;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+
+  font-size: 0.8rem;
+}
+
+.btn-4 {
+  border-radius: 28px;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+
+  font-size: 0.8rem;
+}
+
+.btn-5 {
+  font-size: 0.7rem;
+  background-color: #8ea1e1;
+  border-radius: 2em;
+
+  padding: 10px 15px;
+}
+
+.btn-6 {
+  font-size: 0.7rem;
+  background-color: #ffffff;
+  border-radius: 2em;
+
+  padding: 10px 15px;
+}
+
+.btn-7 {
+  border-radius: 28px;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+
+  font-size: 0.8rem;
+
+  background-color: #8ea1e1;
+
+  color: white;
 }
 
 /* / hero-section */
 
 /* info-section */
 
-.info-section .wrapper .img-block {
-  width: 40%;
+.info-section .wrapper > .img-block {
+  width: 55%;
   height: 300px;
 
-  border: 2px solid black;
-
-  background-image: url(img/photo-placeholder-icon-14.jpeg);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .info-section .wrapper .info-block {
   width: 30%;
   height: 300px;
+}
+
+.info-section .wrapper .info-block * {
+  text-align: start;
 }
 
 .info-section .wrapper {
@@ -90,6 +173,26 @@ header {
   justify-content: space-between;
   /* END - flexbox rules */
 }
+
+/* background */
+
+.back-1 {
+  background-image: url(img_discord/item1.svg);
+}
+
+.back-2 {
+  background-image: url(img_discord/item2.svg);
+}
+
+.back-3 {
+  background-image: url(img_discord/item3.svg);
+}
+
+.back-color-1 {
+  background-color: #f6f6f6;
+}
+
+/* / background */
 
 /* / info-section */
 
@@ -114,13 +217,18 @@ p {
 
 .CTA-section .wrapper .img-block {
   width: 100%;
-  height: 300px;
+  height: 500px;
 
-  border: 2px solid black;
-  background-image: url(img/photo-placeholder-icon-14.jpeg);
+  background-image: url(img_discord/item4-big.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* / CTA-section */
@@ -128,7 +236,9 @@ p {
 /* Footer */
 
 footer {
-  background-color: rgb(150, 150, 150);
+  background-color: #23272a;
+
+  padding: 100px 0;
 }
 
 footer .wrapper {
@@ -136,11 +246,23 @@ footer .wrapper {
   margin: 0 auto;
 }
 
+footer a {
+  color: white;
+}
+
+footer h3 {
+  color: #8ea1e1;
+}
+
+footer h1 {
+  color: #8ea1e1;
+}
+
 footer .wrapper {
   /* flexbox rules */
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+
   /* END - flexbox rules */
 }
 
@@ -152,11 +274,11 @@ footer .wrapper .info-block {
 }
 
 .column {
-  background-color: brown;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-column {
-  background-color: brown;
 }
 
 .sign-in-block {
@@ -165,12 +287,13 @@ footer .wrapper .info-block {
   justify-content: space-between;
   /* END - flexbox rules */
 
-  background-color: aquamarine;
+  border-top: 1px solid #8ea1e1;
+
+  padding: 20px 0px;
+  margin: 20px 0px;
 }
 
 .social-block {
-  background-color: blue;
-
   /* flexbox rules */
   display: flex;
   gap: 10px;
